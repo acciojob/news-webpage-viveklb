@@ -1,16 +1,114 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+<title>News Webpage</title>
+
+<style>
+
+body{
+    background-color:#f5f5f5;
+    font-family: Arial, sans-serif;
+    margin:0;
+}
+
+/* Header */
+.header{
+    background-color:#011e29;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Main layout */
+.container{
+    display:flex;
+    justify-content:space-around;
+    align-items:flex-start;
+    padding:10px;
+}
+
+/* Latest News Section */
+.latest-news-section{
+    background-color:white;
+    padding:15px;
+	height:18vh;
+    width:120px;
+    display:flex;
+    flex-direction:column;
+}
+
+/* Main Article */
+.main-news{
+	margin:1vh;
+	padding:10px;
+	background-color:white;
+    width:280px;
+}
+	ul{
+margin:0px;
+	}
+
+/* Pictorial News Section */
+.pictorial-news-section{
+    background-color:white;
+    padding:15px;
+    width:150px;
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+}
+
+/* Images */
+.pictorial-news-section img{
+    width:100%;
+    margin-bottom:10px;
+}
+
+</style>
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+<header class="header">
+    <h2>News Today</h2>
+</header>
+
+<div class="container">
+
+    <!-- Latest News -->
+    <div class="latest-news-section">
+        <h3>Latest News Articles</h3>
+        <ul>
+            <li>Article 1</li>
+            <li>Article 2</li>
+            <li>Article 3</li>
+        </ul>
+    </div>
+
+    <!-- Main Article -->
+    <div class="main-news">
+        <h2>Main News Article</h2>
+        <p>
+        A major event has captured global attention today as world leaders
+        gather to discuss important developments. Experts believe this
+        meeting could lead to significant changes in international policy
+        and cooperation.
+        </p>
+    </div>
+
+    <!-- Pictorial News -->
+    <div class="pictorial-news-section">
+        <h3>Pictorial News</h3>
+
+        <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/delhi_rains_1674974112847_1674981888135_1674981888135.jpeg">
+
+        <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/ADANI-INDIA-GAUTAM-ADANI-0_1675011651023_1675011651023_1675011672003_1675011672003.JPG">
+
+        <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/FRANCE-REFORM-PENSIONS-31_1675022359706_1675022359706_1675022383851_1675022383851.JPG">
+
+    </div>
+
+</div>
 
 </body>
-
 </html>
